@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Welcome Page</title>
+    <title>ReadMyWrite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .story {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
+    <header>
+        <h1>Welcome to ReadMyWrite</h1>
+        <p>Explore the World of My Written Stories</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Stories</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="story">
+            <h2>Story Title 1</h2>
+            <p>This is a brief description of my first story...</p>
+        </div>
+        <div class="story">
+            <h2>Story Title 2</h2>
+            <p>This is a brief description of my second story...</p>
+        </div>
+        <!-- Add more stories as needed -->
+    </div>
+    <footer>
+        <p>&copy; 2024 ReadMyWrite. All rights reserved.</p>
+    </footer>
 </body>
 </html>
