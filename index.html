@@ -1,32 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ReadMyWrite</title>
+    <title>BookLovers - Discover Your Next Favorite Book</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-        }
-        #splash-screen {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        #splash-screen h1 {
-            font-size: 3em;
-            border: 2px solid black;
-            padding: 20px;
-            background-color: lightgray;
-        }
-        .hidden {
-            display: none;
         }
         header {
             background-color: #333;
@@ -49,12 +30,18 @@
         .content {
             padding: 20px;
         }
-        .story {
+        .book {
             background-color: white;
             margin: 20px 0;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .review {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #eef;
+            border-left: 5px solid #88f;
         }
         footer {
             background-color: #333;
@@ -66,41 +53,42 @@
             bottom: 0;
         }
     </style>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("splash-screen").addEventListener("click", function() {
-                this.classList.add("hidden");
-            });
-        });
-    </script>
 </head>
 <body>
-    <div id="splash-screen">
-        <h1>ReadMyWrite</h1>
-    </div>
     <header>
-        <h1>Welcome to ReadMyWrite</h1>
-        <p>Explore the World of My Written Stories</p>
+        <h1>Welcome to BookLovers</h1>
+        <p>Discover and share book reviews</p>
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="stories.html">Stories</a>
+        <a href="books.html">Books</a>
+        <a href="reviews.html">Reviews</a>
         <a href="contact.html">Contact</a>
     </nav>
     <div class="content">
-        <div class="story">
-            <h2>Story Title 1</h2>
-            <p>This is a brief description of my first story...</p>
+        <div class="book">
+            <h2>Book Title 1</h2>
+            <p>Author: Jane Doe</p>
+            <p>Genre: Fiction</p>
+            <div class="review">
+                <p><strong>Review by John:</strong> Loved this book! The story was compelling and the characters were well-developed.</p>
+            </div>
+            <div class="review">
+                <p><strong>Review by Alice:</strong> A great read. I couldn't put it down!</p>
+            </div>
         </div>
-        <div class="story">
-            <h2>Story Title 2</h2>
-            <p>This is a brief description of my second story...</p>
+        <div class="book">
+            <h2>Book Title 2</h2>
+            <p>Author: John Smith</p>
+            <p>Genre: Non-fiction</p>
+            <div class="review">
+                <p><strong>Review by Mary:</strong> Informative and engaging. Highly recommend it!</p>
+            </div>
         </div>
-        <!-- Add more stories as needed -->
+        <!-- Add more books and reviews as needed -->
     </div>
     <footer>
-        <p>&copy; 2024 ReadMyWrite. All rights reserved.</p>
+        <p>&copy; 2024 BookLovers. All rights reserved.</p>
     </footer>
 </body>
 </html>
